@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/AddMovieForm.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Movie</title>
+  </head>
+  <body>
+    <h1 class="text1">Add Movie</h1>
+    <div class="fade-in" id="movieForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required/>
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" required />
+      <label for="director">Director:</label>
+      <input type="text" id="director" name="director" required/>
+      <label for="duration">Duration:</label>
+      <input
+        type="time"
+        id="duration"
+        name="duration"
+        step="60"
+        min="00:00"
+        max="23:59"
+      />
+
+      <details>
+        <summary>Genre:</summary>
+        <div class="checkbox-group">
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="accion" />
+            Adventure</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="drama" /> Drama</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="romance" />
+            Romance</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="comedy" /> Comedy</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="terror" /> Terror</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="thriller" />
+            Thriller</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="documental" />
+            Documentary</label
+          >
+
+          <label class="checkbox-item"
+            ><input type="checkbox" name="genre" value="anime" /> Anime</label
+          >
+
+          <label class="checkbox-item"
+          ><input type="checkbox" name="genre" value="Sci-fi" /> Sci-fi</label
+        >
+        </div>
+      </details>
+      <label for="rate">Rate:</label>
+
+      <input type="number" id="rate" step="0.1" min="0" max="10" required />
+
+      <label for="poster">Poster:</label>
+      <input type="text" id="poster" required/>
+
+      <button type="button" onclick="send()">Save Movie</button>
+
+      <button type="button" id="btnClear" onclick="clearInput()">
+        Clear form
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../scripts/AddMovieBtn.js"></script>
+    <script src="../public/bundle.js"></script>
+  </body>
+</html>

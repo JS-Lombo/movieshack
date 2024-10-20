@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"rel="stylesheet");
+
+body {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(40, 41, 41);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-family: "Neonderthaw", cursive;
+  font-weight: 1400;
+  font-style: italic;
+}
+
+.text1 {
+  color:  rgb(244, 211, 244);
+    text-shadow: 0 0 5px rgb(232, 227, 232),
+                0 0 10px rgb(165, 41, 165),
+                0 0 140px rgb(152, 19, 152),
+                0 0 170px rgb(152, 19, 152);
+  
+                margin-top: 20px;
+                font-size: 600%;
+              
+  }
+ 
+  .text2 {
+    color:  rgb(244, 211, 244);
+      text-shadow: 0 0 5px rgb(232, 227, 232),
+                  0 0 10px rgb(76, 165, 41),
+                  0 0 140px rgb(127, 193, 29),
+                  0 0 170px rgb(168, 243, 99);
+    
+                  margin-top: 20px;
+                  font-size: 600%;
+                
+    }
+  
+.head-nav {
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+nav button {
+  margin: 7px;
+  padding: 5px;
+  color: rgb(237, 238, 221);
+  background-color: black;
+}
+
+.text-container{
+
+ margin: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.p1 {
+  
+  color: yellow;
+  font-size: medium;
+  position: relative;
+  animation: moveLeft 20s linear infinite;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que se desborda del contenedor */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%); /* Inicia fuera del contenedor hacia la derecha */
+  }
+  100% {
+    transform: translateX(-250%); /* Se desplaza hacia la izquierda, mostrando el texto */
+  }
+}
+
+#animeCardContainer ,
+#cardContainer,
+#SciFiCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  height: fit-content;
+  overflow: hidden;
+  border: rgb(216, 216, 123) solid 8px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 130px red;
+  margin: 25px;
+  animation: fadeIn 2s ease forwards;
+  margin-top: 4px;
+}
+
+
+.card-body {
+  width: 200px;
+
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.card-body img {
+  width: 100%;
+}
+
+p {
+  color: yellow;
+  font-size: medium;
+}
+
+.card-body:hover {
+  transform: translateY(-20px);
+  transition: transform 1s ease;
+  box-shadow: 5px 5px 40px rgb(255, 237, 171);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(0.8);
+  }
+}

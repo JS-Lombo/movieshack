@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"rel="stylesheet");
+
+
+
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+ background-color: rgb(15, 14, 14);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(black, purple);
+  border: 5px solid rgb(147, 157, 235);
+  padding: 40px;
+  margin: 40px;
+  border-radius: 30px;
+  box-shadow: 8px 8px 60px rgb(140, 129, 222);
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: smaller;
+  font-family: "Neonderthaw", cursive;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.text1 {
+  font-size: 200px;
+  color:  rgb(244, 211, 244);
+    text-shadow: 0 0 5px rgb(232, 227, 232),
+                0 0 10px rgb(41, 124, 165),
+                0 0 140px rgb(53, 180, 30),
+                0 0 170px rgb(93, 178, 242);
+  
+                margin-top: 20px;
+                font-size: 600%;
+              
+  }
+.join-us {
+background-color: rgb(90, 92, 89);
+border: 2px solid rgb(220, 214, 214);
+box-shadow: 3px 3px 40px rgb(255, 201, 85);
+padding-left: 30px;
+ padding-right: 30px;
+ animation: fadeIn; 
+animation-duration: 4s;
+ border-radius: 10px;
+
+}
+
+
+.user-data {
+  border: solid white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  
+  box-shadow: 5px 5px  30px rgb(216, 119, 135);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  
+  
+}
+
+.input {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.title{
+ display: flex;
+  margin: 10px;
+  padding: 50px;
+  border-radius: 10px;
+  /*box-shadow: 5px 5px 20px rgb(194, 171, 231);*/
+  border: solid white;
+  background-color:rgb(33, 34, 36);
+  box-shadow: 5px 5px 20px pink;
+  opacity: 100%;
+  justify-content: center;
+  flex-direction: column;
+  
+
+}
+
+
+
+.exp{
+  border: 2px solid white;
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: white;
+  background-color: rgb(66, 61, 76);
+  justify-content: center;
+  width: 300px;
+  padding: 18px;
+  align-self: center;
+  box-shadow: 3px 3px  40px rgb(190, 211, 120);
+   
+}
+
+button{
+
+width: 100px;
+}
+
+.register-title{
+border: solid white;
+border-radius: 10px;
+box-shadow: 5px 5px 40px white;
+background-color: black;
+padding-left: 30px;
+padding-right: 30px;
+
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"rel="stylesheet");
+
+body {
+  background-color: rgb(38, 36, 41);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  background-size: cover; /* La imagen cubrirá todo el contenedor */
+  background-position: center; /* La imagen estará centrada */
+  background-repeat: no-repeat; /* La imagen no se repetirá */
+}
+
+h1 {
+
+  font-family: "Neonderthaw", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text1 {
+  color:  rgb(244, 211, 244);
+    text-shadow: 0 0 5px rgb(44, 240, 30),
+                0 0 10px rgb(165, 41, 165),
+                0 0 140px rgb(152, 19, 152),
+                0 0 170px rgb(152, 19, 152);
+  
+                margin-top: 20px;
+                font-size: 600%;
+              
+  }
+ 
+#movieForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(246, 246, 246);
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 7px 7px 90px rgb(119, 169, 235);
+  border-radius: 9px;
+  background-color: black 30%;
+}
+label,
+input,
+button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px;
+  background-color: rgb(229, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+details {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+summary {
+  cursor: pointer;
+}
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Distribuir elementos uniformemente */
+}
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  flex: 0 4 30%;
+  margin-bottom: 5px;
+}
+/* Cambiar cursor a forma de mano al pasar sobre el input de genre */
+#genre {
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fadeInAnimation 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

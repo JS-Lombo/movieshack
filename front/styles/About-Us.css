@@ -1,0 +1,56 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"rel="stylesheet");
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(58, 49, 59);
+}
+#description{
+    padding: 10px;
+    box-shadow: 0px 0px 30px;
+    border-radius: 5px;
+
+}
+
+.text1 {
+    color:  rgb(244, 211, 244);
+      text-shadow: 0 0 5px rgb(44, 240, 30),
+                  0 0 10px rgb(165, 41, 165),
+                  0 0 140px rgb(152, 19, 152),
+                  0 0 170px rgb(152, 19, 152);
+    
+                  margin-top: 20px;
+                  font-size: 600%;
+                
+    }
+
+p{
+    color: white;
+}
+
+.text2 {
+    color:  rgb(244, 211, 244);
+      text-shadow: 0 0 5px rgb(196, 215, 195),
+                  0 0 10px rgba(213, 63, 163, 0.863),
+                  0 0 140px rgb(240, 14, 195),
+                  0 0 170px rgb(217, 60, 196);
+    
+                  margin-top: 20px;
+                  font-size: 300%;
+                
+    }
+
+    #opiniones-guardadas{
+        box-shadow: 0px 0px 10px ;
+        margin-top: 20px;
+    }
+
+    button{
+        color: yellow;
+        background-color: black;
+        box-shadow: 0px 0px 20px rgb(98, 96, 96);
+    }
